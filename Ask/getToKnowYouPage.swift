@@ -9,17 +9,88 @@ import SwiftUI
 
 struct getToKnowYouPage: View {
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(Color.burntSienna)
-                .ignoresSafeArea()
-            VStack {
-                Text("Get to Know You")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                    .foregroundColor(Color("teaGreen"))
-            }//vstack
-        }//zstack
+        NavigationStack {
+            ZStack {
+                Rectangle()
+                    .fill(Color.burntSienna)
+                    .ignoresSafeArea()
+                ScrollView(.vertical){
+                    VStack {
+                        Text("Get to Know You")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                            .foregroundColor(Color("teaGreen"))
+                            .padding(.vertical, 15.0)
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("What is your favorite hobby?")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("Do you have pets?")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("What do you like to do for fun?")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("Question")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("Question")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.teaGreen)
+                            .frame(width: 300, height: 100)
+                            .overlay(
+                                Text("Question")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.hookerGreen)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                            )
+                    }//vstack
+                }//scrollview
+            }//zstack
+        }//navstack
     }//body
 }//struct
 
